@@ -2135,6 +2135,7 @@ h6 {
     font-weight: 900;
     color: white;
     margin-bottom: 16px;
+    line-height: 1.2;
 }
 
 .cta-subtitle {
@@ -2148,12 +2149,14 @@ h6 {
     justify-content: center;
     gap: 30px;
     margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 .countdown-item {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px 30px;
     border-radius: 12px;
+    min-width: 120px;
 }
 
 .countdown-number {
@@ -2181,6 +2184,7 @@ h6 {
     transition: all 0.3s;
     box-shadow: 0 8px 20px rgba(3, 96, 214, 0.4);
     font-family: var(--font-heading);
+    max-width: 100%;
 }
 
 .btn-cta-large:hover {
@@ -2191,6 +2195,43 @@ h6 {
 .cta-trust {
     color: rgba(255, 255, 255, 0.7);
     margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .final-cta-section {
+        padding: 60px 16px;
+    }
+
+    .cta-title {
+        font-size: 32px;
+    }
+
+    .cta-subtitle {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .cta-countdown {
+        gap: 12px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* 2x2 grid */
+    }
+
+    .countdown-item {
+        padding: 16px;
+        min-width: 0;
+    }
+
+    .countdown-number {
+        font-size: 36px;
+    }
+
+    .btn-cta-large {
+        padding: 16px 32px;
+        font-size: 16px;
+        width: 100%;
+    }
 }
 
 /* Footer */
