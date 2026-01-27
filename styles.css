@@ -274,8 +274,8 @@ h6 {
 
 @media (max-width: 768px) {
     .navbar {
-        top: 75px;
-        /* Increased for better mobile visibility */
+        top: 40px;
+        /* Reset to 40px to match sticky height */
         padding: 10px 0;
     }
 
