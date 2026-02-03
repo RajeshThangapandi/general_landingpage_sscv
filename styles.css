@@ -12,10 +12,10 @@
 
 :root {
     /* Brand Colors - Extracted from kanchiuniv.ac.in */
-    --primary-blue: #0360d6;
-    --secondary-blue: #0366d6;
-    --accent-gold: #ffc107;
-    --dark-gold: #daa520;
+    --primary-blue: #ffc107;
+    --secondary-blue: #daa520;
+    --accent-gold: #0360d6;
+    --dark-gold: #0366d6;
 
     /* Neutral Colors */
     --white: #ffffff;
@@ -64,9 +64,9 @@ h6 {
     top: 0;
     left: 0;
     right: 0;
-    background: #FFC107;
+    background: var(--accent-gold);
     /* Yellow background like reference */
-    color: black;
+    color: white;
     /* Dark text for contrast */
     padding: 4px 12px;
     /* Reduced padding for smaller size */
@@ -116,7 +116,7 @@ h6 {
     font-size: 13px;
     /* Smaller font */
     font-family: var(--font-heading);
-    color: black;
+    color: white;
     padding-left: 100%;
     /* Start off-screen */
     animation: marquee 15s linear infinite;
@@ -141,7 +141,7 @@ h6 {
 .btn-apply-sticky {
     background: var(--primary-blue);
     /* Blue button like reference */
-    color: white;
+    color: black;
     border: none;
     padding: 6px 16px;
     /* Smaller button padding */
@@ -156,7 +156,7 @@ h6 {
 }
 
 .btn-apply-sticky:hover {
-    background: #004494;
+    background: #daa520;
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
@@ -241,21 +241,21 @@ h6 {
 
 .btn-apply-nav {
     background: var(--primary-blue);
-    color: white;
+    color: black;
     border: none;
     padding: 10px 24px;
     border-radius: 6px;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s;
-    box-shadow: 0 4px 12px rgba(3, 96, 214, 0.3);
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
     font-family: var(--font-heading);
     font-size: 13px;
 }
 
 .btn-apply-nav:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(3, 96, 214, 0.4);
+    box-shadow: 0 6px 16px rgba(255, 193, 7, 0.4);
 }
 
 .hamburger {
@@ -394,7 +394,7 @@ h6 {
     align-items: center;
     gap: 12px;
     max-width: 100%;
-    border: 1px solid rgba(251, 176, 59, 0.3);
+    border: 1px solid rgba(3, 96, 214, 0.3);
     flex-wrap: wrap;
     font-size: 12px;
 }
@@ -435,7 +435,7 @@ h6 {
     color: var(--accent-gold);
     line-height: 1;
     letter-spacing: -1px;
-    text-shadow: 0 2px 10px rgba(251, 176, 59, 0.3);
+    text-shadow: 0 2px 10px rgba(3, 96, 214, 0.3);
 }
 
 .ranking-subtitle {
@@ -468,7 +468,7 @@ h6 {
     font-family: var(--font-heading);
     font-size: 10px;
     font-weight: 700;
-    color: var(--bg-dark);
+    color: white;
     letter-spacing: 0.5px;
 }
 
@@ -476,7 +476,7 @@ h6 {
     font-family: var(--font-heading);
     font-size: 32px;
     font-weight: 900;
-    color: var(--bg-dark);
+    color: white;
     line-height: 1;
     margin-top: 4px;
 }
@@ -537,7 +537,7 @@ h6 {
 .stat-icon {
     width: 45px;
     height: 45px;
-    background: rgba(251, 176, 59, 0.15);
+    background: rgba(3, 96, 214, 0.15);
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -598,7 +598,7 @@ h6 {
     align-items: center;
     gap: 10px;
     background: var(--primary-blue);
-    color: white;
+    color: black;
     border: none;
     padding: 12px 28px;
     border-radius: 6px;
@@ -607,7 +607,7 @@ h6 {
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 8px 24px rgba(3, 96, 214, 0.25);
+    box-shadow: 0 8px 24px rgba(255, 193, 7, 0.25);
     margin-bottom: 20px;
     width: 100%;
     justify-content: center;
@@ -616,7 +616,7 @@ h6 {
 .hero-cta-button:hover {
     background: var(--secondary-blue);
     transform: translateY(-2px);
-    box-shadow: 0 12px 32px rgba(3, 96, 214, 0.35);
+    box-shadow: 0 12px 32px rgba(255, 193, 7, 0.35);
 }
 
 .hero-cta-button svg {
@@ -1147,7 +1147,7 @@ h6 {
 
 .btn-apply-red {
     background: var(--primary-blue);
-    color: white;
+    color: black;
     border: none;
     padding: 14px 32px;
     border-radius: 8px;
@@ -1713,7 +1713,7 @@ h6 {
 
 .btn-apply-program {
     background: var(--primary-blue);
-    color: white;
+    color: black;
     border: none;
     padding: 10px 24px;
     border-radius: 8px;
@@ -2620,7 +2620,7 @@ h6 {
     gap: 12px;
     font-family: var(--font-heading);
     font-size: 16px;
-    color: var(--bg-dark);
+    color: white;
 }
 
 .banner-icon {
@@ -2638,7 +2638,7 @@ h6 {
 
 .btn-banner-apply {
     background: var(--primary-blue);
-    color: white;
+    color: black;
     border: none;
     padding: 12px 32px;
     border-radius: 8px;
